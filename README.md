@@ -8,4 +8,8 @@ Attended hacakthon since 2019.
 <p>Top 15 team</p>
 <p>Programmer’s date is a 2 days long online hackathon, wherein developers, designers, entrepreneurs code in the solutions.</p><br>
 <h1>hackall -devfolio hackthon</h1>
+<p> An opportunity to participate in a Global Diversity Hackathon from a safe environment.</p>
+<h1>HackGujurat</h1>
+<p>An opportunity to participate in a Global Diversity Hackathon from a safe environment.</p>
+<h1>Iste hackathon</h1>
 
