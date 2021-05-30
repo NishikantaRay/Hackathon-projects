@@ -1,0 +1,247 @@
+#navbar{
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+/*     background-image: url('https://miro.medium.com/max/1248/1*-lEnZt4xjwkVTXNBLNr_6w.gif'); */
+  background-image: url('https://www.healthit.gov/sites/default/files/2020-03/Cures-Final-Rule_Banner_Opt2_v3%5B4%5D.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Style the navigation bar links */
+.navbar a {
+  color: rgb(17, 16, 16);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(34, 32, 32);
+  color: black;
+}  
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+/* .sticky {
+  top: 0;
+  width: 100%;
+}  */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media  (min-width: 992px) {
+ .navbar-nav{
+  margin-left: auto;
+}
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar-nav{
+      margin-left: auto;
+  }
+  
+}
+
+#search {
+margin: 0 auto;
+}
+
+.parallax {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#icon i:hover {
+  background-color: rgb(34, 32, 32);
+
+}
+
+.team-boxed{color:#313437;background-color:#eef4f7}.team-boxed p{color:#7d8285}.team-boxed h2{font-weight:700;margin-bottom:40px;padding-top:40px;color:inherit}@media (max-width:767px){.team-boxed h2{margin-bottom:25px;padding-top:25px;font-size:24px}}.team-boxed .intro{font-size:16px;max-width:500px;margin:0 auto}.team-boxed .intro p{margin-bottom:0}.team-boxed .people{padding:50px 0}.team-boxed .item{text-align:center}.team-boxed .item .box{text-align:center;padding:30px;background-color:#fff;margin-bottom:30px}.team-boxed .item .name{font-weight:700;margin-top:28px;margin-bottom:8px;color:inherit}.team-boxed .item .title{text-transform:uppercase;font-weight:700;color:#d0d0d0;letter-spacing:2px;font-size:13px}.team-boxed .item .description{font-size:15px;margin-top:15px;margin-bottom:20px}.team-boxed .item img{max-width:160px}.team-boxed .social{font-size:18px;color:#a2a8ae}.team-boxed .social a{color:inherit;margin:0 10px;display:inline-block;opacity:.7}.team-boxed .social a:hover{opacity:1}
+.footer-dark{padding:50px 0;color:#f0f9ff;background-color:#282d32}.footer-dark h3{margin-top:0;margin-bottom:12px;font-weight:700;font-size:16px}.footer-dark ul{padding:0;list-style:none;line-height:1.6;font-size:14px;margin-bottom:0}.footer-dark ul a{color:inherit;text-decoration:none;opacity:.6}.footer-dark ul a:hover{opacity:.8}.footer-dark .item.text{margin-bottom:36px}@media (max-width:767px){.footer-dark .item:not(.social){text-align:center;padding-bottom:20px}.footer-dark .item.text{margin-bottom:0}}.footer-dark .item.text p{opacity:.6;margin-bottom:0}.footer-dark .item.social{text-align:center}@media (max-width:991px){.footer-dark .item.social{text-align:center;margin-top:20px}}.footer-dark .item.social>a{font-size:20px;width:36px;height:36px;line-height:36px;display:inline-block;text-align:center;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.4);margin:0 8px;color:#fff;opacity:.75}.footer-dark .item.social>a:hover{opacity:.9}.footer-dark .copyright{text-align:center;padding-top:24px;opacity:.3;font-size:13px;margin-bottom:0}
+#a1{
+  max-width: 400px;
+}
+/* Contact us form  */
+.container {
+  /* max-width: 400px; */
+  width: 100%;
+  margin: 0 auto;
+  position: relative
+}
+
+#contactus {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+
+#contactus h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px
+}
+
+#contactus h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%
+}
+
+#contactus input[type="text"],
+#contactus input[type="email"],
+#contactus input[type="tel"],
+#contactus input[type="url"],
+#contactus textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px
+}
+
+#contactus input[type="text"]:hover,
+#contactus input[type="email"]:hover,
+#contactus input[type="tel"]:hover,
+#contactus input[type="url"]:hover,
+#contactus textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa
+}
+
+#contactus textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none
+}
+
+#contactus button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #f0715f;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px
+}
+
+#contactus button[type="submit"]:hover {
+  background: #f07150;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out
+}
+
+#contactus button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+}
+
+#contactus input:focus,
+#contactus textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa
+}
+
+::-webkit-input-placeholder {
+  color: #888
+}
+
+:-moz-placeholder {
+  color: #888
+}
+
+::-moz-placeholder {
+  color: #888
+}
+
+:-ms-input-placeholder {
+  color: #888
+}
+
+
+/* end contact form */
+#m1{text-align:center}

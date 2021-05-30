@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FARMER</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader" style="background-color: ;"></div>
+	<div style="display:none;" id="myDiv" class="animate-bottom">
+        <nav class="navbar navbar-expand-md navbar-dark bg-light  shadow p-3 mb-5 bg-white rounded" style="background-color: rgb(8, 7, 92);
+        background-image: linear-gradient(rgb(18, 97, 11),rgb(44, 206, 52));">
+            <div class="container-fluid ">
+                <a href="index.html" class="navbar-brand">
+                    <h3>FARMER</h3>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav " style="text-align: center;">
+                        <a href="#" class="nav-item nav-link active" style="font-size: 20px;">Home</a>
+                        <a href="#getin" class="nav-item nav-link" style="font-size: 20px;">Connect With Us</a>						
+                    </div>                   
+                        <nav class="main-nav ml-auto align-center" style="text-align: center;">
+                                <!-- inser more links here -->
+								<ul>
+                                    <a class="cd-signin" href="#0">Sign in</a>
+                                    <a class="cd-signup" href="#0">Sign up</a>
+								</ul>
+                        </nav>
+                </div>
+            </div>
+        </nav>
+        <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+            <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+                <ul class="cd-switcher">
+                    <li><a href="#0">Sign in</a></li>
+                    <li><a href="#0">New account</a></li>
+                </ul>
+    
+                <div id="cd-login"> <!-- log in form -->
+                    <form class="cd-form">
+                        <p class="fieldset">
+                            <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                            <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                            <span class="cd-error-message">Error message here!</span>
+                        </p>
+    
+                        <p class="fieldset">
+                            <label class="image-replace cd-password" for="signin-password">Password</label>
+                            <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+                            <a href="#0" class="hide-password">Hide</a>
+                            <span class="cd-error-message">Error message here!</span>
+                        </p>
+    
+                        <p class="fieldset">
+                            <input type="checkbox" id="remember-me" checked>
+                            <label for="remember-me">Remember me</label>
+                        </p>
+    
+                        <p class="fieldset">
+                            <input class="full-width" type="submit" value="Login">
+                        </p>
+                    </form>
+                    
+                    <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                </div> <!-- cd-login -->
+    
+                <div id="cd-signup"> <!-- sign up form -->
+                    <form class="cd-form">
+                        <p class="fieldset">
+                            <label class="image-replace cd-username" for="signup-username">Username</label>
+                            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                            <span class="cd-error-message">Error message here!</span>
+                        </p>
+    
+                        <p class="fieldset">
+                            <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                            <span class="cd-error-message">Error message here!</span>
+                        </p>
+    
+                        <p class="fieldset">
+                            <label class="image-replace cd-password" for="signup-password">Password</label>
+                            <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+                            <a href="#0" class="hide-password">Hide</a>
+                            <span class="cd-error-message">Error message here!</span>
+                        </p>
+    
+                        <p class="fieldset">
+                            <input type="checkbox" id="accept-terms">
+                            <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+                        </p>
+    
+                        <p class="fieldset">
+                            <input class="full-width has-padding" type="submit" value="Create account">
+                        </p>
+                    </form>
+    
+                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                </div> <!-- cd-signup -->
+    
+                <div id="cd-reset-password"> <!-- reset password form -->
+                    <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+    
+                    <form class="cd-form">
+                        <p class="fieldset">
+                            <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                            <span class="cd-error-message">Error message here!</span>
+                        </p>
+    
+                        <p class="fieldset">
+                            <input class="full-width has-padding" type="submit" value="Reset password">
+                        </p>
+                    </form>
+    
+                    <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+                </div> <!-- cd-reset-password -->
+                <a href="#0" class="cd-close-form">Close</a>
+            </div> <!-- cd-user-modal-container -->
+        </div> <!-- cd-user-modal -->
+        <!-- Login Modal -->
+	
+        <header class="headerhack" >
+            <div class="container-fluid" >
+                <div class="row">
+
+                    <div class="col-sm-11 col-md-6 col-12  box" style="padding-top: 0px;" >
+                        <div style="padding-bottom: 30px;"> <h3 style="text-align: center; color: rgb(23, 35, 145); text-transform: uppercase;"><b> LOGIN / SIGN UP </b></h3></div>
+                       <div class="row">
+                            <div class="col-sm-11 col-md-6 col-12">
+                                <center><h3>For Dealer</h3></center><br>
+                                <a>
+                                    <div id="root" class="d-flex justify-content-center align-items-center main-nav cd-signup">
+                                        <div class="flip">
+                                        <div class="content">
+                                            <div class="front">
+                                            <img src="img/del.svg" alt="photo" style="width: 300px;"><br>
+                                            </div>
+                                            <div class="back" style="text-align: center; color: rgb(5, 10, 15); background-color: rgb(8, 7, 92);background-image: linear-gradient(rgb(162, 162, 240),rgb(121, 107, 184));">
+                                            <h1>DEALER</h1>
+                                            <p>Automatic mark calculations and graphs generation of attainment vs threshold.Able to have an eagle's view on both faculty and students and ensuring guidelines are met to standards. </p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                            </a>
+								<!-- <nav class="main-nav">
+									<a class="cd-signup" href="#0">Sign up</a>
+								</nav>									 -->
+                            </div>
+							
+                            <div class="col-sm-11 col-md-6 col-12">
+                                <center><h3>For Farmer</h3></center><br>
+                                <a>
+                                    <div id="root" class="d-flex justify-content-center align-items-center main-nav cd-signup">
+                                        <div class="flip">
+                                        <div class="content">
+                                            <div class="front">
+                                            <img src="img/farmer.svg" alt="photo" style="width: 300px;">
+                                            </div>
+                                    
+                                            <div class="back" style="text-align: center; color: rgb(5, 10, 15); background-color: rgb(8, 7, 92);background-image: linear-gradient(rgb(162, 162, 240),rgb(121, 107, 184));">
+                                                <h1>FARMER</h1>
+                                                <p>Check guidelines, rubrics, outcomes expectations with viewing remarks and comments on each assignment from staff.</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+							
+                        
+                        </div>
+                       
+                      
+                    </div>
+					
+                    <div class="col-md-6 col-12  box"  >
+                        <section class="howit" id="howit">
+                            <div class="container">
+                                <div style="padding-bottom: 30px;"> <h1 style="text-align: center; color: rgb(23, 35, 145);"><b>
+                                    HOW IT WORKS</b></h1></div>
+                                    
+                                <div class="how">
+                                       <h5><i class="fa fa-arrow-right text-primary" aria-hidden="true"></i>  Farmer is an application where Farmer can request  for seling their products.</h5> <br>
+                                        <h5><i class="fa fa-arrow-right text-primary" aria-hidden="true"></i>  Dealer are expected to participate in buying process.</h5> <br>
+                                          <h5><i class="fa fa-arrow-right text-primary " aria-hidden="true"></i>  Student’s performance in Assessment here may/ may not participate in her overall Evaluation.</h5><br>
+                                        <h5><i class="fa fa-arrow-right text-primary " aria-hidden="true"></i>  The Assignment application supports and helps teachers to create online assignments for students.</h5><br>
+                                        <h5><i class="fa fa-arrow-right text-primary" aria-hidden="true"></i>  It has seamless integration with the Gradebook configuration built for the Institute department. </h5><br>
+                                         <h5><i class="fa fa-arrow-right text-primary" aria-hidden="true"></i>  Teachers can create assignments that may be applicable to more than one class. </h5><br>
+                                </div>     
+                            </div>
+                        </section>
+                    </div>
+					
+                </div>
+            </div>
+        </header>
+       
+         <!-- Start: Modern Contact Form -->
+    <section class="getintouch" style="padding-bottom: 100px; padding-top: 100px;" id="getin">
+        <div class="container">
+            <div class="container modern-form">
+                <div class="text-center">
+                    <h2 style="color: rgb(23, 35, 145);text-align: center;border-width: 19px;">Get in touch</h2>
+                </div>
+                
+                <div class="modern-form__form-container">
+                    <form>
+                        <div class="form-row">
+                            <div class="col col-contact">
+                                <div class="form-group modern-form__form-group--padding-r"><input class="form-control input input-tr" type="text" placeholder="First Name">
+                                    <div class="line-box">
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-contact">
+                                <div class="form-group modern-form__form-group--padding-l"><input class="form-control input input-tr" type="text" placeholder="Email">
+                                    <div class="line-box">
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group modern-form__form-group--padding-t"><textarea class="form-control input modern-form__form-control--textarea" placeholder="Message"></textarea>
+                                    <div class="line-box">
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col text-center"><button class="btn btn-primary submit-now" type="submit" style="filter: saturate(131%);">Submit Now</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <!-- End: Modern Contact Form -->
+        <!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+							<li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a  href=""><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a  href=""><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a  href=""><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a  href=""><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a  href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6">2020 © All right Reversed.<a class="text-green ml-2"  href=""target="_blank">FARMER</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
